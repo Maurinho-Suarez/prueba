@@ -1,10 +1,14 @@
 const express = require('express');
-const path = require('node:path');;
+const path = require('path');
 
 const app = express();
 
+//app.get('/', (req,res) => {
+  //  res.send("Hola Maurinho!!");
+//});
+
 app.get('/', (req,res) => {
-    res.send("Hola Maurinho!!");
+    res.sendFile(path.join(__dirname, '/views/home.html'));
 });
 
 app.listen(3000, (req,res) => {
