@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Maurinho-Suarez/prueba/issues"
   },
-  "homepage": "https://github.com/Maurinho-Suarez/prueba#readme"
+  "homepage": "https://github.com/Maurinho-Suarez/prueba#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
