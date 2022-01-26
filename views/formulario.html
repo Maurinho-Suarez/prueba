@@ -8,11 +8,10 @@
 </head>
 <body>
     
-    <form action="/validacion" method="post">
+    <form action="/" method="post">
         <label for="name">Nombre: </label>
         <input type="text" name="nombre" id="nombre">
         <br>
-        <label for="color">Color: </label>
         <select name="colores" id="colores">
             <option value="Rojo">Rojo</option>
             <option value="Azul">Azul</option>
@@ -26,7 +25,10 @@
         <label for="email">Email: </label>
         <input type="email" name="email">
         <br>
-        <input type="submit" name="Enviar" value="Enviar">
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad">
+        <br>
+        <button type="submit" onclick="">Enviar</button>
     </form>
 </body>
 </html>

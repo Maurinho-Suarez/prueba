@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
+const mainRoutes = require('./routes/formRoutes');
 
 const app = express();
 const router = express.Router();
@@ -9,7 +10,12 @@ const router = express.Router();
   //  res.send("Hola Maurinho!!");
 //});
 
-//app.use();
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+app.use(mainRoutes);
+
+//app.set('view engine', 'html');
 
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/views/formulario.html'));
